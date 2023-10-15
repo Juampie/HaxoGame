@@ -10,16 +10,14 @@ public class Player : MonoBehaviourPunCallbacks
     private Animator _animator;
     private PhotonView _view;
     private string _jumpingTrigger = "Jumping";
-    private bool _isJumping = false;
-
+    private bool _isJumping = false; 
 
     private void Start()
     {
         _animator = GetComponent<Animator>();
         _jumpFX = GetComponent<JumpFX>();
         _view = GetComponent<PhotonView>();
-
-
+       
 
     }
 
@@ -30,33 +28,27 @@ public class Player : MonoBehaviourPunCallbacks
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
+
             if (Physics.Raycast(ray, out hit))
             {
-
                 Transform objectHit = hit.transform;
 
                 if (!_isJumping && Nearby(objectHit.position, _standsTile.transform.position))
                 {
-                    if (_standsTile != objectHit.gameObject)
+                    if (_standsTile != objectHit.gameObject && objectHit.gameObject.CompareTag("Road"))
                     {
                         StartCoroutine(Jumping(objectHit.position));
                         _standsTile = objectHit.gameObject;
                     }
-
-
                 }
-
-
             }
         }
     }
-
 
     IEnumerator Jumping(Vector3 target)
     {
         _isJumping = true;
 
-      
         _jumpFX.PlayAnimations(transform, _duration, target);
         PlayJumpAnimation();
 
@@ -65,17 +57,14 @@ public class Player : MonoBehaviourPunCallbacks
         _isJumping = false;
     }
 
-
     public void PlayJumpAnimation()
     {
-        photonView.RPC("PlayJuampAnimationRPC", RpcTarget.All);
-
+        photonView.RPC("PlayJumpAnimationRPC", RpcTarget.All);
     }
 
     [PunRPC]
-    private void PlayJuampAnimationRPC()
+    private void PlayJumpAnimationRPC()
     {
-
         _animator.SetTrigger(_jumpingTrigger);
     }
 
@@ -84,12 +73,9 @@ public class Player : MonoBehaviourPunCallbacks
         float xDistance = Mathf.Abs(goTo.x - now.x);
         float zDistance = Mathf.Abs(goTo.z - now.z);
 
-        const float thresholdX = 0.88f;
-        const float thresholdZ = 0.76f;
+        const float thresholdX = 0.9f;
+        const float thresholdZ = 0.8f;
 
         return (xDistance <= thresholdX) && (zDistance <= thresholdZ);
     }
-
-   
-
 }

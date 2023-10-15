@@ -95,7 +95,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 283.5
-    height: 514
+    height: 514.5
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
@@ -113,23 +113,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 514
+    y: 514.5
     width: 1145.5
-    height: 354
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 15}
+    height: 353.5
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 15}
   - {fileID: 20}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -246,7 +246,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1145.5
-    height: 514
+    height: 514.5
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
@@ -269,7 +269,7 @@ MonoBehaviour:
     x: 283.5
     y: 0
     width: 862
-    height: 514
+    height: 514.5
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
@@ -402,9 +402,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 586
+    y: 586.5
     width: 1144.5
-    height: 333
+    height: 332.5
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -428,24 +428,24 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scripts
-  m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\ilya-\Desktop\SUPER PAPKA\UnityMyGames\HexoGame
+  - Assets/Scenes
+  m_LastFoldersGridSize: 96
+  m_LastProjectPath: C:\Users\ilya-\Documents\GitHub\HaxoGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 535}
-    m_SelectedIDs: ac610000
-    m_LastClickedID: 25004
-    m_ExpandedIDs: 000000001e61000020610000226100002461000026610000286100002a6100002c6100002e61000030610000326100003461000036610000386100003a6100003c6100003e61000040610000426100004461000046610000486100006861000000ca9a3b
+    scrollPos: {x: 0, y: 327.5}
+    m_SelectedIDs: c4610000
+    m_LastClickedID: 25028
+    m_ExpandedIDs: 000000004a6100004c6100004e61000050610000526100005461000056610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -473,7 +473,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001e61000020610000226100002461000026610000286100002a6100002c6100002e61000030610000326100003461000036610000386100003a6100003c6100003e6100004061000042610000446100004661000048610000
+    m_ExpandedIDs: 000000004a6100004c6100004e61000050610000526100005461000056610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -498,10 +498,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: e0bc0000
+    m_LastClickedInstanceID: 48352
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000d26c0000000000005860000068640000368700004a870000
+    m_ExpandedInstanceIDs: c6230000d26c00005860000068640000368700004a87000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -517,7 +517,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -526,7 +526,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
 --- !u!114 &16
@@ -599,7 +599,7 @@ MonoBehaviour:
     x: 0
     y: 72
     width: 282.5
-    height: 493
+    height: 493.5
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -615,7 +615,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 14fbffff
+      m_ExpandedIDs: 02fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -662,7 +662,7 @@ MonoBehaviour:
     x: 283.5
     y: 72
     width: 860
-    height: 493
+    height: 493.5
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -677,7 +677,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -168.5, y: -26}
+      snapOffset: {x: -171, y: -26}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
@@ -1021,9 +1021,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.0417142, y: 3.596738, z: 18.430943}
+    m_Target: {x: -14.187508, y: 3.5198905, z: 11.764535}
     speed: 2
-    m_Value: {x: -2.0417142, y: 3.596738, z: 18.430943}
+    m_Value: {x: -14.187508, y: 3.5198905, z: 11.764535}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1069,20 +1069,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.063257046, y: -0.004753965, z: 0.00030713077, w: 0.99800783}
+    m_Target: {x: -0.09913653, y: 0.7355272, z: -0.110243216, w: -0.66118973}
     speed: 2
-    m_Value: {x: 0.06325513, y: -0.006250834, z: 0.00040200716, w: 0.99797773}
+    m_Value: {x: -0.099136524, y: 0.73552716, z: -0.11024321, w: -0.6611897}
   m_Size:
-    m_Target: 9.819058
+    m_Target: 7.778144
     speed: 2
-    m_Value: 9.819058
+    m_Value: 7.778144
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 2
+    m_SpeedNormalized: 1
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -1093,7 +1093,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.052769173, y: -0.013739152, z: 0.00074711844, w: 0.9985182}
+  m_LastSceneViewRotation: {x: -0.0002884787, y: -0.99847424, z: 0.05577119, w: -0.004467122}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -1123,7 +1123,7 @@ MonoBehaviour:
     x: 283.5
     y: 72
     width: 860
-    height: 493
+    height: 493.5
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1177,22 +1177,22 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 860
-      height: 472
-    m_Scale: {x: 0.8740741, y: 0.8740741}
-    m_Translation: {x: 430, y: 236}
+      height: 472.5
+    m_Scale: {x: 0.875, y: 0.875}
+    m_Translation: {x: 430, y: 236.25}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -491.94913
+      x: -491.42856
       y: -270
-      width: 983.89825
+      width: 982.8571
       height: 540
     m_MinimalGUI: 1
-  m_defaultScale: 0.8740741
-  m_LastWindowPixelSize: {x: 1720, y: 986}
+  m_defaultScale: 0.875
+  m_LastWindowPixelSize: {x: 1720, y: 987}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1219,9 +1219,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 586
+    y: 586.5
     width: 1144.5
-    height: 333
+    height: 332.5
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0

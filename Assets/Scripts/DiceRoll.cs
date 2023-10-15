@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class DiceRoll : MonoBehaviour
 {
+    [SerializeField] private GameObject _diceMash;
     private Rigidbody _rigidbody;
     private bool _rolling = false;
-    private int _lastValue = -1;
+
 
     // Список значений на верхних сторонах кубика
     private int[] _values = { 3, 1, 6, 5, 2, 4 };
@@ -39,6 +40,7 @@ public class DiceRoll : MonoBehaviour
     // Запускает кубик вращаться
     private void Roll()
     {
+        _diceMash.SetActive(true);
         _rolling = true;
         _rigidbody.isKinematic = false;
         Vector3 torque = new Vector3(Random.Range(200, 500), Random.Range(200, 500), Random.Range(200, 500));
@@ -70,11 +72,9 @@ public class DiceRoll : MonoBehaviour
 
         // Выводим значение на экран, если оно изменилось
         int value = _values[maxIndex];
-        if (value != _lastValue)
-        {
-            Debug.Log("Результат: " + value);
-            _lastValue = value;
-        }
         
+            Debug.Log("Результат: " + value);
+        
+        _diceMash.SetActive(false);
     }
 }
